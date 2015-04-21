@@ -227,6 +227,15 @@ a:focus {
 
 ul.banner-social-buttons {
     margin-top: 0;
+    animation-name: movePortfolioItem;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+	
+	-webkit-animation-name: movePortfolioItem;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1) 50ms;
+	-webkit-animation-duration: 1s;
 }
 
 @media(max-width:1199px) {
@@ -282,6 +291,21 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
+@media(max-width:1255px) {
+    #about-page #about-content article .content {
+        margin-left: 50px;
+    }
+}
+@media(max-width:991px) {
+    #about-page #about-content article .potrait {
+        transform: none;
+    }
+    
+    #about-page #about-content article .content {
+        margin: 0 auto;
+        transform: none;
+    }
+}
 #about-page #about-content {
 	margin-top: 10%;
 	margin-bottom: 5%;
@@ -305,7 +329,7 @@ body {
 	
 }
 #about-page #about-content article .content {
-	width: 650px;
+	max-width: 650px;
     transform: translateY(70px);
     animation-name: moveContent;
 	animation-iteration-count: 1;
@@ -418,6 +442,7 @@ body {
         transform: scale(1);
     }
 }
+
 /************ Project Page ***********/
 
 section h2.section-heading {
@@ -631,14 +656,6 @@ body {
 	margin-bottom: 5%;
 }
 /**** Landing page ****************/
-@-webkit-keyframes fade-in {
- 0% { opacity: 0; }
- 100% { opacity: 1; }
-}
-@keyframes fade-in {
-	0% { opacity: 0; }
- 100% { opacity: 1; }
-}
 .brand-heading { 
     font-size:150%;
     width:15.3em;
