@@ -35,14 +35,6 @@ p {
     line-height: 1.5;
 }
 
-@media(min-width:768px) {
-    p {
-        margin: 0 0 35px;
-        font-size: 20px;
-        line-height: 1.6;
-    }
-}
-
 a {
     color: #42dca3;
     -webkit-transition: all .2s ease-in-out;
@@ -58,7 +50,9 @@ a:focus {
 .light {
     font-weight: 400;
 }
-
+.banner-social-buttons>li {
+    margin-bottom: 20px;
+}
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
@@ -118,24 +112,6 @@ a:focus {
 .navbar-custom .nav li.active a:hover {
     color: #fff;
 }
-
-@media(min-width:768px) {
-    .navbar-custom {
-        padding: 20px 0;
-        border-bottom: 0;
-        letter-spacing: 1px;
-        background: 0 0;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
-    }
-
-    .navbar-custom.top-nav-collapse {
-        padding: 0;
-        border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #000;
-    }
-}
-
 .intro {
     display: table;
     width: 100%;
@@ -145,9 +121,7 @@ a:focus {
     color: #fff;
     background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
     background-color: #000;
-    -webkit-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;
 }
 
 .intro .intro-body {
@@ -156,13 +130,13 @@ a:focus {
 }
 
 .intro .intro-body .brand-heading {
-    font-size: 30px;
-    margin-bottom: 10px;
+    font-size: 50px;
 }
-
+.intro .intro-body .container {
+    margin-top: 10%;
+}
 .intro .intro-body .intro-text {
     font-size: 18px;
-    margin-bottom: 10px;
 }
 .intro .intro-body a {
     color: rgba(195, 195, 195, 0.71);
@@ -174,32 +148,9 @@ a:focus {
 .intro .intro-body .intro-text .fa {
 	font-size: 100px;
 }
-@media(min-width:768px) {
-    .intro {
-        height: 85%;
-        padding: 0;
-    }
-
-    .intro .intro-body .brand-heading {
-        font-size: 50px;
-    }
-
-    .intro .intro-body .intro-text {
-        font-size: 20px;
-    }
-}
 
 .content-section {
     padding-top: 100px;
-}
-@media(min-width:767px) {
-    .content-section {
-        padding-top: 250px;
-    }
-
-    .download-section {
-        padding: 100px 0;
-    }
 }
 
 .btn {
@@ -238,30 +189,8 @@ ul.banner-social-buttons {
 	-webkit-animation-duration: 1s;
 }
 
-@media(max-width:1199px) {
-    ul.banner-social-buttons {
-        margin-top: 15px;
-    }
-    #about-page #about-content article .potrait {
-		transform: translateX(165px);
-		transition: all 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s;
-	}
-}
-
-@media(max-width:767px) {
-    ul.banner-social-buttons li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.banner-social-buttons li:last-child {
-        margin-bottom: 0;
-    }
-}
-
 footer {
-    padding: 45px 0 10px;
+    padding-top: 25px;
 }
 
 footer p {
@@ -291,31 +220,16 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
-@media(max-width:1255px) {
-    #about-page #about-content article .content {
-        margin-left: 50px;
-    }
-}
-@media(max-width:991px) {
-    #about-page #about-content article .potrait {
-        transform: none;
-    }
-    
-    #about-page #about-content article .content {
-        margin: 0 auto;
-        transform: none;
-    }
-}
+
 #about-page #about-content {
 	margin-top: 10%;
 	margin-bottom: 5%;
 	opacity: 0.9;
 }
 #about-page #about-content article .potrait {
-	width: 350px;
-	height: 400px;
+	width: 100%;
 	opacity: 0.9;
-	transform: translateX(105px);
+	transform: translateX(0);
 	animation-name: moveImage;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
@@ -328,9 +242,11 @@ body {
 	-webkit-animation-duration: 0.7s;
 	
 }
+#about-page #about-content article .about-content-part {
+    padding: 0;
+}
 #about-page #about-content article .content {
-	max-width: 650px;
-    transform: translateY(70px);
+    transform: translateY(0);
     animation-name: moveContent;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
@@ -341,12 +257,12 @@ body {
 	-webkit-animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1) 50ms;
 	-webkit-animation-duration: 0.7s;
 }
+
 #about-page #about-content article .content .nested {
 	background: rgb(255, 255, 255);
 	text-align: left;
 	color: black;
 	padding: 40px 40px 0;
-	height: 250px;
 }
 #about-page #about-content article .content .nested h4 {
 	margin-bottom: 25px;
@@ -354,6 +270,7 @@ body {
 #about-page #about-content article .content .nested p{ 
 	font-size: 16px;
 	margin-bottom: 0;
+    padding-bottom: 25px;
 }
 #about-page #about-content article .nested .social-media {
 	float: right;
@@ -369,7 +286,11 @@ body {
 #about-page #about-content article .quote {
 	color: white;
 	font-style: italic;
-	margin-top: 80px;
+    margin: 8px;
+    text-align: left;
+}
+#about-page #about-content article .quote p {
+    font-size: 14px;
 }
 .fa-heart {
 	margin-left: 10px;
@@ -386,34 +307,34 @@ body {
 }
 @keyframes moveImage {
     0% {
-        transform: translateX(-10px);
+        transform: translateX(-80px);
     }
     100% {
-        transform: translateX(105px);
+        transform: translateX(0);
     }
 }
 @-webkit-keyframes moveImage {
 	0% {
-        transform: translateX(-10px);
+        transform: translateX(-80px);
     }
     100% {
-        transform: translateX(105px);
+        transform: translateX(0);
     }
 }
 @keyframes moveContent {
 	0% {
-        transform: translateY(-20px);
+        transform: translateY(-100px);
     }
     100% {
-        transform: translateY(70px);
+        transform: translateY(0);
     }
 }
 @-webkit-keyframes moveContent {
 	0% {
-        transform: translateY(-20px);
+        transform: translateY(-100px);
     }
     100% {
-        transform: translateY(70px);
+        transform: translateY(0);
     }
 }
 @-webkit-keyframes pulse {    
@@ -553,11 +474,6 @@ section h3.section-subheading {
     z-index: 2;
 }
 
-@media(min-width:767px) {
-    #portfolio .portfolio-item {
-        margin: 0 0 30px;
-    }
-}
 .portfolio-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
@@ -657,8 +573,6 @@ body {
 }
 /**** Landing page ****************/
 .brand-heading { 
-    font-size:150%;
-    width:15.3em;
     white-space:nowrap;
     overflow:hidden;
     text-shadow: 1px 0px 10px rgb(240, 240, 240);
