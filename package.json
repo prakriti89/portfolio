@@ -1,0 +1,14 @@
+{
+	"name": "Portfolio",
+  
+	"version": "0.0.1",
+  
+	"description": "Prakriti's Portfolio webpage",
+  
+	"dependencies": {
+	
+		"express": "^4.10.2",
+		"ejs": "^1.0.0"
+	 }
+
+}

@@ -1,0 +1,33 @@
+<% modals.forEach(function(modal) { %>
+    <div class="portfolio-modal modal fade" id="<%= modal.modalName %>" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h1><%= modal.title %></h1>
+                            <p class="item-intro text-muted"><%= modal.tagline %></p>
+                            
+                            <% include ../pages/carouselTemplate %>
+                            
+                            <p><%= modal.description %></p>
+                            <p><strong>Visit </strong><a href="<%= modal.url %>"><strong><%= modal.urlTitle %></strong></a>
+                            </p>
+                            <ul class="list-inline">
+                                <li><strong>Date: </strong><%= modal.date %></li>
+                                <li><strong>Client: </strong><%= modal.client %></li>
+                                <li><strong>Category: </strong><%= modal.category %></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<% }); %>
