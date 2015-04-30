@@ -151,12 +151,17 @@ blockquote {
     font-size: 18px;
 }
 .intro .intro-body a {
-    color: rgba(195, 195, 195, 0.71);
-    transition: all 0.6s ease-in; 
+    animation-name: pulse;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-duration: 1s;
+	
+	-webkit-animation-name: pulse;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-duration: 1s; 
 }
-.intro .intro-body a:hover {
-    color: rgba(195, 195, 195, 1);
-}
+
 .intro .intro-body .intro-text .fa {
 	font-size: 100px;
 }
