@@ -434,7 +434,9 @@ section h2.section-subheading {
     margin: 0 auto;
     max-width: 400px;
 }
-
+#portfolio .portfolio-item .portfolio-link .img-responsive {
+    height: 285px;
+}
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
     position: absolute;
     width: 100%;
@@ -473,7 +475,7 @@ section h2.section-subheading {
     padding: 5px;
     max-width: 400px;
     text-align: center;
-    background-color: #fff;
+    background: rgba(240, 130, 38, 0.9);
 }
 
 #portfolio .portfolio-item .portfolio-caption h4 {
@@ -485,6 +487,9 @@ section h2.section-subheading {
     margin: 0;
     font-size: 16px;
     font-style: italic;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
 }
 
 #portfolio * {
@@ -564,6 +569,10 @@ section h2.section-subheading {
 .portfolio-modal .modal-backdrop {
     display: none;
     opacity: 0;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+    width: 75%;
+    height: 320px;
 }
 .carousel-control.right {
     background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(165, 165, 165, 0.5) 100%);

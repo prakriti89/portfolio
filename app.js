@@ -28,26 +28,26 @@ app.get('/projects', function (req, res) {
     var projectItems = [
          {  
             modal: '#portfolioModal1',
-            image: 'img/potrait.png',
+            image: 'img/miljo-1.png',
             title: 'E-learning website'
         },
         {   modal: '#portfolioModal2',
-            image: 'img/potrait.png',
+            image: 'img/miljo-2.png',
             title: 'Weekly Task app'
         },
         {   modal: '#portfolioModal3',
-            image: 'img/potrait.png',
+            image: 'img/aveiro-2.png',
             title: 'Aveiro webpage'
         },
         {
             modal: '#portfolioModal4',
-            image: 'img/potrait.png',
+            image: 'img/avance-stock-1.png',
             title: 'Stockmarket graphs'
         },
         {
             modal: '#portfolioModal5',
-            image: 'img/potrait.png',
-            title: 'Location timer'
+            image: 'img/work-track-1.png',
+            title: 'Work Track'
         } 
     ];
     var own = "Self Project";
@@ -65,9 +65,9 @@ app.get('/projects', function (req, res) {
             urlTitle: 'Miljøgilli website',
             carousel:  {
                 name: '#myCarousel1',
-                first: 'img/potrait.png',
-                second: 'img/potrait.png',
-                third: 'img/potrait.png'
+                first: 'img/miljo-1.png',
+                second: 'img/miljo-2.png',
+                third: 'img/miljo-3.png'
             }
         },
         {
@@ -95,13 +95,13 @@ app.get('/projects', function (req, res) {
             date: 'Janaury 2015',
             client: own,
             category: skill, 
-            url: '',
+            url: 'http://aveiro.herokuapp.com',
             urlTitle: 'Aveiro website',
             carousel:  {
                 name: '#myCarousel3',
-                first: 'img/potrait.png',
-                second: 'img/potrait.png',
-                third: 'img/potrait.png'
+                first: 'img/aveiro-1.png',
+                second: 'img/aveiro-2.png',
+                third: 'img/aveiro-3.png'
             }
         },
         {
@@ -112,30 +112,30 @@ app.get('/projects', function (req, res) {
             date: 'November 2014',
             client: own,
             category: skill, 
-            url: 'http://avancegaskurs.herokuapp.com',
+            url: 'http://avancegas-kurs-web.herokuapp.com',
             urlTitle: 'Stockmarket website',
             carousel:  {
                 name: '#myCarousel4',
-                first: 'img/potrait.png',
-                second: 'img/potrait.png',
-                third: 'img/potrait.png'
+                first: 'img/avance-stock-1.png',
+                second: 'img/avance-stock-2.png',
+                third: 'img/avance-stock-3.png'
             }
         },
         {
             modalName: 'portfolioModal5',
-            title: 'Location Timer',
+            title: 'Work Track',
             tagline: 'This app is used to track the timer based on the location.',
             description: 'Location Timer is written in node in backend and used jQueryUI in frontend. The website is reponsive and suitable for all the devices. The design and development of the website is done by myself.' ,
             date: 'Febraury 2015',
             client: own,
             category: skill, 
-            url: 'http://locationtimer.herokuapp.com',
-            urlTitle: 'Location Timer App website',
+            url: 'http://work-track.herokuapp.com/',
+            urlTitle: 'Work track website',
             carousel:  {
                 name: '#myCarousel5',
-                first: 'img/potrait.png',
-                second: 'img/potrait.png',
-                third: 'img/potrait.png'
+                first: 'img/work-track-1.png',
+                second: 'img/work-track-2.png',
+                third: 'img/work-track-3.png'
             }
         }
     ]
