@@ -574,11 +574,20 @@ section h2.section-subheading {
     width: 75%;
     height: 320px;
 }
-.carousel-control.right {
-    background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(165, 165, 165, 0.5) 100%);
+.carousel-indicators li {
+    border: 2px solid #42dca3;
 }
-.carousel-control.left {
-    background-image: linear-gradient(to right,rgba(221, 221, 221, 1) 0,rgba(0,0,0,.0001) 100%);
+.carousel-indicators .active {
+    background-color: #42dca3;    
+}
+
+.carousel-control.left, .carousel-control.right {
+  background-image: linear-gradient(to right,rgba(255, 253, 253, 1) 0,rgba(255, 255, 255, 1) 100%);
+  width: 5%;
+  height: 15%;
+  top: 150px;
+  color: #42dca3;
+  font-size: 50px;
 }
 /************ Contact Page *****************/
 

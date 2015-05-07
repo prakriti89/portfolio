@@ -64,7 +64,7 @@ app.get('/projects', function (req, res) {
             url: 'http://miljøgilli.no/moodle',
             urlTitle: 'Miljøgilli website',
             carousel:  {
-                name: '#myCarousel1',
+                name: 'myCarousel1',
                 first: 'img/miljo-1.png',
                 second: 'img/miljo-2.png',
                 third: 'img/miljo-3.png'
@@ -81,7 +81,7 @@ app.get('/projects', function (req, res) {
             url: '',
             urlTitle: 'Weekly app website',
             carousel:  {
-                name: '#myCarousel2',
+                name: 'myCarousel2',
                 first: 'img/potrait.png',
                 second: 'img/potrait.png',
                 third: 'img/potrait.png'
@@ -98,7 +98,7 @@ app.get('/projects', function (req, res) {
             url: 'http://aveiro.herokuapp.com',
             urlTitle: 'Aveiro website',
             carousel:  {
-                name: '#myCarousel3',
+                name: 'myCarousel3',
                 first: 'img/aveiro-1.png',
                 second: 'img/aveiro-2.png',
                 third: 'img/aveiro-3.png'
@@ -115,7 +115,7 @@ app.get('/projects', function (req, res) {
             url: 'http://avancegas-kurs-web.herokuapp.com',
             urlTitle: 'Stockmarket website',
             carousel:  {
-                name: '#myCarousel4',
+                name: 'myCarousel4',
                 first: 'img/avance-stock-1.png',
                 second: 'img/avance-stock-2.png',
                 third: 'img/avance-stock-3.png'
@@ -132,7 +132,7 @@ app.get('/projects', function (req, res) {
             url: 'http://work-track.herokuapp.com/',
             urlTitle: 'Work track website',
             carousel:  {
-                name: '#myCarousel5',
+                name: 'myCarousel5',
                 first: 'img/work-track-1.png',
                 second: 'img/work-track-2.png',
                 third: 'img/work-track-3.png'
