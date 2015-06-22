@@ -10,15 +10,8 @@ app.use(express.static(__dirname + '/'))
 //set the view engine to ejs
 app.set('view engine', 'ejs');
 
-//index page
-app.get('/', function (req, res) {
-	res.render('pages/index', {
-        title: 'Prakriti Portfolio'
-    });
-});
-
 //about page
-app.get('/about', function (req, res) {
+app.get('/', function (req, res) {
 	res.render('pages/aboutMain', {
         title: 'About me'
     });
@@ -31,10 +24,10 @@ app.get('/projects', function (req, res) {
             image: 'img/miljo-1.png',
             title: 'E-learning website'
         },
-        {   modal: '#portfolioModal2',
+    /*    {   modal: '#portfolioModal2',
             image: 'img/miljo-2.png',
             title: 'Weekly Task app'
-        },
+        },*/
         {   modal: '#portfolioModal3',
             image: 'img/aveiro-2.png',
             title: 'Aveiro webpage'
@@ -70,7 +63,7 @@ app.get('/projects', function (req, res) {
                 third: 'img/miljo-3.png'
             }
         },
-        {
+       /* {
             modalName: 'portfolioModal2',
             title: 'Weekly Task App',
             tagline: 'An web app where you can write your weekly task.',
@@ -86,7 +79,7 @@ app.get('/projects', function (req, res) {
                 second: 'img/potrait.png',
                 third: 'img/potrait.png'
             }
-        },
+        },*/
         {
             modalName: 'portfolioModal3',
             title: 'Aveiro',

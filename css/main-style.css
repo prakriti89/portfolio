@@ -9,7 +9,8 @@ body {
     height: 100%;
     font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #fff;
-    background-color: #000;
+    background:  -webkit-linear-gradient(black, gray);
+    background: linear-gradient(black, gray);
 }
 body {
     -webkit-tap-highlight-color: #fed136;
@@ -38,7 +39,6 @@ p {
 }
 
 a {
-    color: #42dca3;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
@@ -46,17 +46,11 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #1d9b6c;
 }
 blockquote {
     padding: 1px 15px;
 }
-/**** Landing page ****************/
-.brand-heading { 
-    white-space:nowrap;
-    overflow:hidden;
-    text-shadow: 1px 0px 10px rgb(240, 240, 240);
-}
+
 /********** Main Page ****************/
 .light {
     font-weight: 400;
@@ -124,47 +118,6 @@ blockquote {
     color: #fff;
 }
 /************ Shared styles *****************/
-.intro {
-    display: table;
-    width: 100%;
-    height: auto;
-    padding: 100px 0;
-    text-align: center;
-    color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
-    background-color: #000;
-    background-size: cover;
-}
-
-.intro .intro-body {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.intro .intro-body .brand-heading {
-    font-size: 50px;
-}
-.intro .intro-body .container {
-    margin-top: 10%;
-}
-.intro .intro-body .intro-text {
-    font-size: 18px;
-}
-.intro .intro-body a {
-    animation-name: pulse;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out;
-	animation-duration: 1s;
-	
-	-webkit-animation-name: pulse;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: ease-in-out;
-	-webkit-animation-duration: 1s; 
-}
-
-.intro .intro-body .intro-text .fa {
-	font-size: 100px;
-}
 
 .content-section {
     padding-top: 100px;
@@ -203,12 +156,13 @@ blockquote {
 #about-page #about article .potrait {
 	width: 100%;
 	opacity: 0.9;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
 	transform: translateX(0);
 	animation-name: moveImage;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
 	animation-duration: 0.7s;
-	animation-delay: 0.7s;
 	
 	-webkit-animation-name: moveImage;
 	-webkit-animation-iteration-count: 1;
@@ -282,7 +236,7 @@ blockquote {
 }
 @keyframes moveImage {
     0% {
-        transform: translateX(-80px);
+        transform: translateX(-200px);
     }
     100% {
         transform: translateX(0);
@@ -290,7 +244,7 @@ blockquote {
 }
 @-webkit-keyframes moveImage {
 	0% {
-        transform: translateX(-80px);
+        transform: translateX(-200px);
     }
     100% {
         transform: translateX(0);
@@ -298,7 +252,7 @@ blockquote {
 }
 @keyframes moveContent {
 	0% {
-        transform: translateY(-100px);
+        transform: translateY(-150px);
     }
     100% {
         transform: translateY(0);
@@ -306,7 +260,7 @@ blockquote {
 }
 @-webkit-keyframes moveContent {
 	0% {
-        transform: translateY(-100px);
+        transform: translateY(-150px);
     }
     100% {
         transform: translateY(0);
@@ -397,7 +351,7 @@ section h2.section-subheading {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(240, 130, 38, 0.9);
+    background: #42dca3;
     transition: all ease .5s;
 }
 
@@ -430,7 +384,6 @@ section h2.section-subheading {
     padding: 5px;
     max-width: 400px;
     text-align: center;
-    background: rgba(240, 130, 38, 0.9);
 }
 
 #portfolio .portfolio-item .portfolio-caption h4 {
@@ -441,7 +394,7 @@ section h2.section-subheading {
 #portfolio .portfolio-item .portfolio-caption p {
     margin: 0;
     font-size: 16px;
-    font-style: italic;
+    font-weight: bold;
     margin-top: 5px;
     margin-bottom: 5px;
     color: white;
@@ -460,6 +413,8 @@ section h2.section-subheading {
     background-clip: border-box;
     box-shadow: none;
     color: black;
+    background: linear-gradient(90deg, #8e9eab 10%, #eef2f3 90%);
+    background: -webkit-linear-gradient(90deg, #8e9eab 10%, #eef2f3 90%);
 }
 
 .portfolio-modal .modal-content h2 {
@@ -536,7 +491,7 @@ section h2.section-subheading {
 }
 
 .carousel-control.left, .carousel-control.right {
-  background-image: linear-gradient(to right,rgba(255, 253, 253, 1) 0,rgba(255, 255, 255, 1) 100%);
+  background-image: none;
   width: 5%;
   height: 15%;
   top: 150px;
