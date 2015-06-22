@@ -12,4 +12,14 @@
         </footer>
         <% include ../partials/javascriptLibs %>
     </div>
+    <script type="text/javascript">
+        $(document).ready( function () {
+        $(".portfolio-item a").click(function () {    
+            $("#portfolio").addClass('background-backside');
+        });
+        $(".close-modal").click(function () {    
+            $("#portfolio").removeClass('background-backside');
+        });
+        });
+    </script>
 </body>
