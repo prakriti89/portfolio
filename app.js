@@ -141,8 +141,26 @@ app.get('/projects', function (req, res) {
 });
 //contact page
 app.get('/contact', function (req, res) {
+    var socialMedias = [
+        {
+            url: 'https://www.linkedin.com/profile/preview?locale=no_NO&trk=prof-0-sb-preview-primary-button',
+            icon: 'fa-linkedin-square',
+            name: 'LinkedIn'
+        },
+        {
+            url: 'https://github.com/prakriti89',
+            icon: 'fa-github',
+            name: 'Github'
+        },
+        {
+            url: 'https://plus.google.com/',
+            icon: 'fa-google-plus',
+            name: 'Google+'
+        }
+    ];
 	res.render('pages/contactMain', {
-        title: 'Contact me'
+        title: 'Contact me',
+        socialMedias: socialMedias
     });
 });
 

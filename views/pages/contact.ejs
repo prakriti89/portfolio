@@ -5,15 +5,14 @@
         <p><a href="mailto:prakriti89@gmail.com">prakriti89@gmail.com</a>
         </p>
         <ul class="list-inline banner-social-buttons">
-            <li>
-                <a href="https://www.linkedin.com/profile/preview?locale=no_NO&trk=prof-0-sb-preview-primary-button" class="btn btn-default btn-lg"><i class="fa fa-linkedin-square fa-fw"></i> <span class="network-name">LinkedIn</span></a>
-            </li>
-            <li>
-                <a href="https://github.com/prakriti89" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-            </li>
-            <li>
-                <a href="https://plus.google.com/" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-            </li>
+            <% socialMedias.forEach(function(media) { %> 
+                <li>
+                    <a href="<%= media.url %>" class="btn btn-default btn-lg">
+                        <i class="fa <%= media.icon %> fa-fw"></i> 
+                        <span class="network-name"><%= media.name %></span>
+                    </a>
+                </li>
+            <% }); %>
         </ul>
     </div>
 </section>
