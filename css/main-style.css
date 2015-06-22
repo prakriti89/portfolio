@@ -173,6 +173,7 @@ blockquote {
 
 #about-page #about article .about-part {
     padding: 0;
+    text-align: center;
 }
 #about-page #about article .content {
     transform: translateY(0);
@@ -523,10 +524,11 @@ footer p {
 }
 /************* Media Query ******************/
 @media screen and (max-width: 991px) and (min-width: 390px) {
+    
     #about-page #about article .potrait {
         width: 50%;
         border-radius: 50%;
-        margin-bottom: 15px;   
+        margin-bottom: 15px; 
 	}
     section h1.section-heading {
         margin-top: 25px;
