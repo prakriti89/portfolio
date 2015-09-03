@@ -36,11 +36,6 @@ app.get('/projects', function (req, res) {
             modal: '#portfolioModal4',
             image: 'img/avance-stock-1.png',
             title: 'Stockmarket graphs'
-        },
-        {
-            modal: '#portfolioModal5',
-            image: 'img/work-track-1.png',
-            title: 'Work Track'
         } 
     ];
     var own = "Self Project";
@@ -101,7 +96,7 @@ app.get('/projects', function (req, res) {
             modalName: 'portfolioModal4',
             title: 'Stockmarket Graph',
             tagline: 'An website for the company.',
-            description: 'Stockmarket Graph website is developed in order to view the stockmarket charts. It uses node in the backend and CSS3 and HTML5 in the frontend. The website is reponsive and suitable for all the devices. The design and development of the website is done by myself.' ,
+            description: 'Stockmarket Graph website is developed in order to view the stockmarket charts. It uses NodeJS in the backend and CSS3 and HTML5 in the frontend. The website is reponsive and suitable for all the devices. The design and development of the website is done by myself.' ,
             date: 'November 2014',
             client: own,
             category: skill, 
@@ -112,23 +107,6 @@ app.get('/projects', function (req, res) {
                 first: 'img/avance-stock-1.png',
                 second: 'img/avance-stock-2.png',
                 third: 'img/avance-stock-3.png'
-            }
-        },
-        {
-            modalName: 'portfolioModal5',
-            title: 'Work Track',
-            tagline: 'This app is used to track the timer based on the location.',
-            description: 'Location Timer is written in node in backend and used jQueryUI in frontend. The website is reponsive and suitable for all the devices. The design and development of the website is done by myself.' ,
-            date: 'Febraury 2015',
-            client: own,
-            category: skill, 
-            url: 'http://work-track.herokuapp.com/',
-            urlTitle: 'Work track website',
-            carousel:  {
-                name: 'myCarousel5',
-                first: 'img/work-track-1.png',
-                second: 'img/work-track-2.png',
-                third: 'img/work-track-3.png'
             }
         }
     ]

@@ -303,16 +303,16 @@ section h1.section-heading {
     margin-bottom: 15px;
     font-size: 36px;
 }
-section h2.section-subheading {
-    margin-bottom: 75px;
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 400;
-    color: white;
+.project-main-description {
+  background: rgba(79, 79, 79, 0.4);
+  font-size: 16px;
+  padding: 20px;
+  opacity: 0.9;
+  text-align: left; 
 }
 .background-backside {
-    -webkit-filter: blur(8px);
-    filter: blur(8px);
+    -webkit-filter: blur(15px);
+    filter: blur(15px);
 }
 #portfolio .portfolio-item {
     right: 0;
